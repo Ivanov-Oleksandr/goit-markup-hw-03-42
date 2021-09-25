@@ -6,6 +6,25 @@
   --text-color: #757575;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -30,7 +49,23 @@ body {
 .link {
   text-decoration: none;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -49,7 +84,9 @@ body {
 }
 
 /* ------------ Header ---------- */
+
 .header-logo {
+  margin-right: 93px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -63,13 +100,46 @@ body {
   line-height: 1.14;
 }
 
-.navigation-link {
+.heder-container {
+  display: flex;
+  align-items: center;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: #212121;
   letter-spacing: 0.02em;
   cursor: pointer;
 }
 
+.header-connection {
+  display: flex;
+  margin-left: auto;
+  /* background-color: tomato;
+  outline: 2px solid teal; */
+}
+
 .header-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: #757575;
   letter-spacing: 0.02em;
   cursor: pointer;
@@ -79,9 +149,9 @@ body {
   color: #2196f3;
 }
 
-.navigation-link:hover,
+.header-link:hover,
 .header-contacts:hover,
-.navigation-link:focus,
+.header-link:focus,
 .header-contacts:focus {
   color: var(--accent-color);
 }
@@ -89,6 +159,9 @@ body {
 /* ------------ Hero ---------- */
 .hero {
   background-color: #2f303a;
+}
+.hero-container {
+  display: block;
 }
 
 .hero-title {
@@ -102,11 +175,16 @@ body {
 }
 
 .hero-btn {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88x;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
