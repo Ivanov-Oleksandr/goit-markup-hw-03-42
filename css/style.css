@@ -228,7 +228,7 @@ body {
 
 .peculiarities-item {
   width: 270px;
- }
+}
 
 .peculiarities-subtitle {
   margin-bottom: 10px;
@@ -246,7 +246,7 @@ body {
 }
 
 .busyness-item {
-  flex-basis: calc (100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
 }
 
 .busyness-item:not(:nth-child(3n)) {
@@ -264,7 +264,7 @@ body {
 }
 
 .command-item {
-  flex-basis: calc (100% / 4 - 120px);
+  flex-basis: calc(100% / 4 - 120px);
 
   background-color: var(--secondary-background-color);
 }
@@ -383,7 +383,7 @@ body {
   cursor: pointer;
 }
 .poster-item {
-  flex-basis: calc (100% / 3 - 30px);
+  flex-basis: calc(100% / 3 - 30px);
   padding-bottom: 20px;
   margin-bottom: 30px;
 }
