@@ -228,9 +228,7 @@ body {
 
 .peculiarities-item {
   width: 270px;
-  background-color: tomato;
-  outline: 2px solid teal;
-}
+ }
 
 .peculiarities-subtitle {
   margin-bottom: 10px;
