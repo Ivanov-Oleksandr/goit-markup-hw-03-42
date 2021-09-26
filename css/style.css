@@ -104,18 +104,19 @@ body {
   display: flex;
   align-items: center;
 }
+
 .header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
   display: flex;
   align-items: center;
 }
 
 .header-item:not(:last-child) {
   margin-right: 50px;
-}
-
-.header-list {
-  display: flex;
-  align-items: center;
 }
 
 .header-link {
@@ -131,8 +132,6 @@ body {
 .header-connection {
   display: flex;
   margin-left: auto;
-  /* background-color: tomato;
-  outline: 2px solid teal; */
 }
 
 .header-contacts {
@@ -159,12 +158,22 @@ body {
 /* ------------ Hero ---------- */
 .hero {
   background-color: #2f303a;
+  height: 600px;
 }
+
 .hero-container {
   display: block;
+  text-align: center;
+  height: 600px;
+  margin-bottom: 94px;
 }
 
 .hero-title {
+  padding-top: 200px;
+  padding-left: 237px;
+  padding-right: 237px;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -176,18 +185,21 @@ body {
 
 .hero-btn {
   display: inline-block;
-  padding: 10px 32px;
+  padding: 8px 30px;
+  border: 0;
+  border-color: transparent;
   border-radius: 4px;
   min-width: 200px;
-  height: 50px;
+  min-height: 50px;
 
-  font-family: inherit;
+  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88x;
+  line-height: 1.88;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #ffffff;
   background-color: #2196f3;
   cursor: pointer;
@@ -199,7 +211,26 @@ body {
 }
 
 /* ------------ Peculiarities ---------- */
+.peculiarities-container {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.peculiarities-list {
+  display: flex;
+}
+
+.peculiarities-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.peculiarities-item {
+  width: 270px;
+}
+
 .peculiarities-subtitle {
+  margin-bottom: 10px;
+
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -207,12 +238,46 @@ body {
 }
 
 /* ------------ Busyness ---------- */
+.busyness-container {
+  margin-bottom: 94px;
+}
+
+.busyness-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.busyness-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /* ------------ Command ---------- */
+.command-container {
+  margin-bottom: 94px;
+}
+
+.command-title {
+  padding-top: 94px;
+}
+
 .command-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.command-item {
+  width: 270px;
+
   background-color: var(--secondary-background-color);
 }
+
+.command-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .command-subtitle {
+  margin-top: 31px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -221,6 +286,9 @@ body {
 }
 
 .command-text {
+  margin-top: 9px;
+  padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -228,16 +296,28 @@ body {
 
 /* ------------ Footer ---------- */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
 }
 
 .footer-logo-color {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .footer-address {
   font-style: normal;
   cursor: pointer;
+}
+.footer-list {
+  display: block;
+  margin-top: 20px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-link {
@@ -297,3 +377,6 @@ body {
   line-height: 1.88;
   color: var(--text-color);
 }
+
+background-color: tomato;
+outline: 2px solid teal;
