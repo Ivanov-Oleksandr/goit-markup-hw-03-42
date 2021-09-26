@@ -83,6 +83,10 @@ body {
   cursor: pointer;
 }
 
+.margin {
+  margin-bottom: 94px;
+}
+
 /* ------------ Header ---------- */
 
 .header-logo {
@@ -165,7 +169,6 @@ body {
   display: block;
   text-align: center;
   height: 600px;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -213,7 +216,6 @@ body {
 /* ------------ Peculiarities ---------- */
 .peculiarities-container {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .peculiarities-list {
@@ -238,10 +240,6 @@ body {
 }
 
 /* ------------ Busyness ---------- */
-.busyness-container {
-  margin-bottom: 94px;
-}
-
 .busyness-list {
   display: flex;
   margin-top: 50px;
@@ -252,10 +250,6 @@ body {
 }
 
 /* ------------ Command ---------- */
-.command-container {
-  margin-bottom: 94px;
-}
-
 .command-title {
   padding-top: 94px;
 }
@@ -336,10 +330,27 @@ body {
 }
 
 /* ------------ Portfolio ---------- */
-/* ------------ Portfolio button ---------- */
+.portfolio {
+  margin-top: 94px;
+}
+/* ------------ Portfolio buttons ---------- */
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .portfolio-btn {
-  font-family: inherit;
+  display: inline-block;
+  padding: 6px 22px;
+  border-color: transparent;
+  border-radius: 4px;
+
+  font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -360,11 +371,22 @@ body {
   background-color: var(--accent-color);
   color: #ffffff;
 }
-.portfolio-items {
+
+/* ------------ Portfolio posters--------- */
+.portfolio-posters {
+  display: flex;
+  flex-wrap: wrap;
   cursor: pointer;
 }
+.poster-item {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
 
-.items-subtitle {
+.poster-subtitle {
+  margin-top: 20px;
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -372,7 +394,7 @@ body {
   color: var(--title-text-color);
 }
 
-.items-text {
+.poster-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
